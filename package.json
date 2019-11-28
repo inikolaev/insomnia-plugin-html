@@ -1,0 +1,15 @@
+{
+  "name": "insomnia-html",
+  "version": "1.0.0",
+  "main": "index.js",
+  
+  "insomnia": {                    
+    "name": "insomnia-html",
+    "description": "Insomnia HTML Template Tag"
+  },
+  
+  "dependencies": [
+    "jsdom"
+  ],
+  "devDependencies": []
+}
