@@ -66,7 +66,7 @@ module.exports.templateTags = [{
     let response = await context.util.models.response.getLatestForRequestId(id);
 
     let shouldResend = false;
-    if (context.context.getExtraInfo('fromResponseTag')) {
+    if (context.context.getExtraInfo('fromHtmlTag')) {
       shouldResend = false;
     } else if (resendBehavior === 'never') {
       shouldResend = false;
@@ -77,7 +77,7 @@ module.exports.templateTags = [{
     }
 
     // Make sure we only send the request once per render so we don't have infinite recursion
-    const fromResponseTag = context.context.getExtraInfo('fromResponseTag');
+    const fromResponseTag = context.context.getExtraInfo('fromHtmlTag');
     if (fromResponseTag) {
       console.log('[response tag] Preventing recursive render');
       shouldResend = false;
@@ -86,7 +86,7 @@ module.exports.templateTags = [{
     if (shouldResend && context.renderPurpose === 'send') {
       console.log('[response tag] Resending dependency');
       response = await context.network.sendRequest(request, [
-        { name: 'fromResponseTag', value: true },
+        { name: 'fromHtmlTag', value: true },
       ]);
     }
 
