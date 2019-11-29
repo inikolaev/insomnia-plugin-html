@@ -28,7 +28,7 @@ module.exports.templateTags = [{
   }, {
     type: 'string',
     encoding: 'base64',
-    displayName: 'XPath Expression'
+    displayName: 'CSS Selector'
   }, {
     displayName: 'Trigger Behavior',
     help: 'Configure when to resend the dependent request',
