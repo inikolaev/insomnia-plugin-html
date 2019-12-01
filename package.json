@@ -1,5 +1,5 @@
 {
-  "name": "insomnia-plugin-html",
+  "name": "@inikolaev/insomnia-plugin-html",
   "version": "1.0.0",
   "main": "index.js",
   
