@@ -2,6 +2,9 @@
   "name": "@inikolaev/insomnia-plugin-html",
   "version": "1.0.0",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   
   "insomnia": {                    
     "name": "insomnia-plugin-html",
