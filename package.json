@@ -1,6 +1,13 @@
 {
   "name": "@inikolaev/insomnia-plugin-html",
   "version": "1.0.0",
+  "author": "Igor Nikolaev",
+  "description": "Insomnia HTML Template Tag",
+  "license": "MIT",
+  "repository": "https://github.com/inikolaev/insomnia-plugin-html",
+  "bugs": {
+    "url": "https://github.com/inikolaev/insomnia-plugin-html/issues",
+  },
   "main": "index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
